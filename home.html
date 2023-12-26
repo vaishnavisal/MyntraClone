@@ -1,0 +1,897 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="home.css" />
+    <link rel="stylesheet" href="home.js" />
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+
+    <link rel="icon" type="image/x-icon" href="data:image/png;base64,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"/>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />    
+    <title>Online shopping for Women,Men,Kids Fastion & Lifestyle</title>
+
+
+</head>
+    <body>
+        <header >
+            <nav class=" flex" >
+                <div class="left flex item-center gaplogo ">
+                  <a class="navbar-brand" href="">
+                    <img class="logo" src="data:image/png;base64,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"/>
+                  </a>
+
+              
+                   <ul class=" flex justify-center item-center ">
+                   <div class="dropdown">
+                    <li><a class="dropbtn" id="menbot"href="#">MEN</a></li>
+                      <div class="dropdown-content">
+                      
+                      <div class="row">
+                        <div class="column">
+                          <ul class="ulhead">
+                            <h5><li class="droplist h1" ><a href="#">Topwear</a></li></h5>
+
+                                <li class="droplist h1"><a href="#">T-Shirts</a></li>
+                                <li class="droplist" ><a href="#">Casual Shirts</a></li>
+                               <li class="droplist"><a href="#">Formal Shirts<a></li>
+                                <li class="droplist"><a href="#">Sweatshirts</a></li>
+                                <li class="droplist h1" ><a href="#">Sweaters</a></li>
+                                <li class="droplist h1" ><a href="#">Jackets</a></li>
+                                <li class="droplist"><a href="#">Blazers & Coats</a></li>
+                                <li class="droplist"><a href="#">Suits</a></li>
+                                  <hr>
+                            <h5><li class="droplist h1" ><a href="#">Indian & Festive Wear</a></li></h5>
+                                <li class="droplist"><a href="#">Kurtas</a></li>
+                                 <li class="droplist"><a href="#">Dhotis </a></li>
+                                <li class="droplist"><a href="#">Shervanis</a></li>
+                                <li class="droplist"><a href="#">Suits</a></li>
+                                 <li class="droplist"><a href="#">Rain Jacket</a></li>
+                                  <li class="droplist"><a href="#">Dupattas & Shawls</a></li>
+                    </ul>
+        </div>
+        <div class="column">
+          <ul class="ulhead">
+            <h5><li class="droplist h1" ><a href="#">BottomWear</a></li></h5>
+
+                        <li class="droplist"><a href="#">Jeans</a></li>
+                       <li class="droplist" ><a href="#">Casual Trousers</a></li>
+                        <li class="droplist"><a href="#">Formal Trousers</a></li>
+                        <li class="droplist"><a href="#">Shorts</a></li>
+                        <li class="droplist"><a href="#">Track Pants & Joggers</a></li>
+                                  <hr>
+            <h5><li class="droplist h1" ><a href="#">InnerWear & sleepwear</a></li></h5>
+
+                        <li class="droplist"><a href="#">Briefs & Trunks
+                        </a></li>
+                                  <li class="droplist"><a href="#">Boxers
+                        </a></li>
+                                  <li class="droplist"><a href="#">Vests
+                        </a></li>
+
+                        <li class="droplist"><a href="#">Sleepwear & Loungewear
+
+
+                        </a></li>
+                                  <li class="droplist"><a href="#">Thermals
+                        </a></li>
+                        <hr>
+            <h5><li class="droplist h1" ><a href="#">Plus Size</a></li></h5>
+
+          </ul>
+        </div>
+
+
+         <div class="column">
+          
+          <ul class="ulhead">
+                <h5><li class="droplist h1" ><a href="#">Indian & Fusion Wear</a></li></h5>
+                <h5><li class="droplist h1" ><a href="#">Watches &More</a></li></h5>
+                 <h5><li class="droplist h1" ><a href="#"> Bags & purses</a></li></h5>
+                  <li class="droplist"><a href="#">Kurtas & Suits</a></li>
+                    <li class="droplist" ><a href="#">Kurtis, Tunics & Tops</a></li>
+                      <li class="droplist"><a href="#">Ethnic Wear</a></li>
+                      <li class="droplist"><a href="#">Leggings, Salwars </a></li>
+                      <li class="droplist"><a href="#">Skirts & Palazzos</a></li>
+                      <li class="droplist"><a href="#">Dress Materials</a></li>
+                      <li class="droplist"><a href="#">Lehenga Cholis</a></li>
+                      <li class="droplist"><a href="#">Dupattas & Shawls</a></li>
+                      </ul>
+           </div>
+            <div class="column">
+          
+          <ul class="ulhead">
+                <h5><li class="droplist h1" ><a href="#">Indian & Fusion Wear</a></li></h5>
+                       
+
+                    <li class="droplist " ><a href="#">Kurtas & Suits</a></li>
+                    <li class="droplist" ><a href="#">Kurtis, Tunics & Tops</a></li>
+                    <li class="droplist"><a href="#">Ethnic Wear</a></li>
+                    <li class="droplist"><a href="#">Leggings, Salwars </a></li>
+                    <li class="droplist"><a href="#">Skirts & Palazzos</a></li>
+                    <li class="droplist"><a href="#">Dress Materials</a></li>
+                    <li class="droplist"><a href="#">Lehenga Cholis</a></li>
+                    <li class="droplist"><a href="#">Dupattas & Shawls</a></li>
+                    </ul>
+                  </div>
+              <div class="column">
+          
+          <ul class="ulhead">
+                      <li class="droplist h1" >
+            <h5><li class="droplist h1" ><a href="#">Indian & Fusion Wear</a></li></h5>
+                      <li class="droplist"><a href="#">Kurtas & Suits</a></li>
+                      <li class="droplist" ><a href="#">Kurtis, Tunics & Tops</a></li>
+                        <li class="droplist"><a href="#">Ethnic Wear</a></li>
+                        <li class="droplist"><a href="#">Leggings, Salwars </a></li>
+                        <li class="droplist"><a href="#">Skirts & Palazzos</a></li>
+                        <li class="droplist"><a href="#">Dress Materials</a></li>
+                        <li class="droplist"><a href="#">Lehenga Cholis</a></li>
+                        <li class="droplist"><a href="#">Dupattas & Shawls</a></li>
+                 <hr/>
+                      <h5><li class="droplist h1" ><a href="#">Wearables </a></li></h5>
+            <h5><li class="droplist h1" ><a href="#">Watches &More</a></li></h5>
+            <h5><li class="droplist h1" ><a href="#">Bags</a></li></h5>
+
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>             
+     <div class="dropdown">
+          <li><a class="dropbtn"  id="menbot1" href="#">WOMEN</a></li>
+
+    <div class="dropdown-content">
+      
+      <div class="row">
+        <div class="column">
+          <ul class="ulhead">
+            <h5><li class="droplist h1" ><a href="#">Indian & Fusion Wear</a></li></h5>
+
+                        <li class="droplist h1"><a href="#">Kurtas & Suits</a></li>
+                        <li class="droplist" ><a href="#">Kurtis, Tunics & Tops</a></li>
+                          <li class="droplist"><a href="#">Ethnic Wear</a></li>
+                          <li class="droplist"><a href="#">Leggings, Salwars</a></li>
+                          <h5><li class="droplist h1" ><a href="#">Watches &More</a></li></h5>
+                            <h5><li class="droplist h1" ><a href="#">Bags</a></li></h5>
+                          <li class="droplist"><a href="#">Skirts & Palazzos</a></li>
+                          <li class="droplist"><a href="#">Dress Materials</a></li>
+                          <li class="droplist"><a href="#">Lehenga Cholis</a></li>
+                          <li class="droplist"><a href="#">Dupattas & Shawls</a></li>
+            </ul>
+          </div>
+        <div class="column">
+          <ul class="ulhead">
+            <h5><li class="droplist h1" ><a href="#">Indian & Fusion Wear</a></li></h5>
+
+                    <li class="droplist"><a href="#">Kurtas & Suits</a></li>
+                  <li class="droplist" ><a href="#">Kurtis, Tunics & Tops</a></li>
+                    <li class="droplist"><a href="#">Ethnic Wear</a></li>
+                    <li class="droplist"><a href="#">Leggings, Salwars </a></li>
+                    <li class="droplist"><a href="#">Skirts & Palazzos</a></li>
+                    <li class="droplist"><a href="#">Dress Materials</a></li>
+                    <li class="droplist"><a href="#">Lehenga Cholis</a></li>
+                    <li class="droplist"><a href="#">Dupattas & Shawls</a></li>
+                    </ul>
+          </div>
+
+        <div class="column">
+          
+          <ul class="ulhead">
+            <h5><li class="droplist h1" ><a href="#">Indian & Fusion Wear</a></li></h5>
+              <h5><li class="droplist h1" ><a href="#">Watches &More</a></li></h5>
+               <h5><li class="droplist h1" ><a href="#"> Bags & purses</a></li></h5>
+                    <li class="droplist"><a href="#">Kurtas & Suits</a></li>
+                    <li class="droplist" ><a href="#">Kurtis, Tunics & Tops</a></li>
+                    <li class="droplist"><a href="#">Ethnic Wear</a></li>
+                    <li class="droplist"><a href="#">Leggings, Salwars </a></li>
+                    <li class="droplist"><a href="#">Skirts & Palazzos</a></li>
+                    <li class="droplist"><a href="#">Dress Materials</a></li>
+                    <li class="droplist"><a href="#">Lehenga Cholis</a></li>
+                    <li class="droplist"><a href="#">Dupattas & Shawls</a></li>
+                    </ul>
+          </div>
+          <div class="column">
+          
+          <ul class="ulhead">
+            <h5><li class="droplist h1" ><a href="#">Indian & Fusion Wear</a></li></h5>
+                       
+
+                  <li class="droplist " ><a href="#">Kurtas & Suits</a></li>
+                <li class="droplist" ><a href="#">Kurtis, Tunics & Tops</a></li>
+                  <li class="droplist"><a href="#">Ethnic Wear</a></li>
+                  <li class="droplist"><a href="#">Leggings, Salwars </a></li>
+                  <li class="droplist"><a href="#">Skirts & Palazzos</a></li>
+                  <li class="droplist"><a href="#">Dress Materials</a></li>
+                  <li class="droplist"><a href="#">Lehenga Cholis</a></li>
+                  <li class="droplist"><a href="#">Dupattas & Shawls</a></li>
+                  </ul>
+              </div>
+         <div class="column">
+          
+          <ul class="ulhead">
+           <li class="droplist h1" ></li>
+            <h5><li class="droplist h1" ><a href="#">Indian & Fusion Wear</a></li></h5>
+
+                      <li class="droplist"><a href="#">Kurtas & Suits</a></li>
+                    <li class="droplist" ><a href="#">Kurtis, Tunics & Tops</a></li>
+                      <li class="droplist"><a href="#">Ethnic Wear</a></li>
+                      <li class="droplist"><a href="#">Leggings, Salwars </a></li>
+                      <li class="droplist"><a href="#">Skirts & Palazzos</a></li>
+                      <li class="droplist"><a href="#">Dress Materials</a></li>
+                      <li class="droplist"><a href="#">Lehenga Cholis</a></li>
+                      <li class="droplist"><a href="#">Dupattas & Shawls</a></li>
+                 <hr/>
+            <h5><li class="droplist h1" ><a href="#">Wearables </a></li></h5>
+            <h5><li class="droplist h1" ><a href="#">Watches &More</a></li></h5>
+            <h5><li class="droplist h1" ><a href="#">Bags</a></li></h5>
+
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+             <div class="dropdown">
+                <li><a class="dropbtn" id="menbot2" href="#">KIDS</a></li>
+
+                <div class="dropdown-content">
+                  
+                  <div class="row">
+                    <div class="column">
+                      <ul class="ulhead">
+                        <h5><li class="droplist h1" ><a href="#">Indian & Fusion Wear</a></li></h5>
+
+                              <li class="droplist h1"><a href="#">Kurtas & Suits</a></li>
+                            <li class="droplist" ><a href="#">Kurtis, Tunics & Tops</a></li>
+                              <li class="droplist"><a href="#">Ethnic Wear</a></li>
+                              <li class="droplist"><a href="#">Leggings, Salwars</a></li>
+                        <h5><li class="droplist h1" ><a href="#">Watches &More</a></li></h5>
+                        <h5><li class="droplist h1" ><a href="#">Bags</a></li></h5>
+                              <li class="droplist"><a href="#">Skirts & Palazzos</a></li>
+                              <li class="droplist"><a href="#">Dress Materials</a></li>
+                              <li class="droplist"><a href="#">Lehenga Cholis</a></li>
+                              <li class="droplist"><a href="#">Dupattas & Shawls</a></li>
+                        </ul>
+                    </div>
+
+
+        <div class="column">
+          <ul class="ulhead">
+            <h5><li class="droplist h1" ><a href="#">Indian & Fusion Wear</a></li></h5>
+
+                          <li class="droplist"><a href="#">Kurtas & Suits</a></li>
+                        <li class="droplist" ><a href="#">Kurtis, Tunics & Tops</a></li>
+                          <li class="droplist"><a href="#">Ethnic Wear</a></li>
+                          <li class="droplist"><a href="#">Leggings, Salwars </a></li>
+                          <li class="droplist"><a href="#">Skirts & Palazzos</a></li>
+                          <li class="droplist"><a href="#">Dress Materials</a></li>
+                          <li class="droplist"><a href="#">Lehenga Cholis</a></li>
+                          <li class="droplist"><a href="#">Dupattas & Shawls</a></li>
+              </ul>
+        </div>
+
+        <div class="column">
+          
+          <ul class="ulhead">
+            <h5><li class="droplist h1" ><a href="#">Indian & Fusion Wear</a></li></h5>
+            <h5><li class="droplist h1" ><a href="#">Watches &More</a></li></h5>
+            <h5><li class="droplist h1" ><a href="#"> Bags & purses</a></li></h5>
+                    <li class="droplist"><a href="#">Kurtas & Suits</a></li>
+                  <li class="droplist" ><a href="#">Kurtis, Tunics & Tops</a></li>
+                    <li class="droplist"><a href="#">Ethnic Wear</a></li>
+                    <li class="droplist"><a href="#">Leggings, Salwars </a></li>
+                    <li class="droplist"><a href="#">Skirts & Palazzos</a></li>
+                    <li class="droplist"><a href="#">Dress Materials</a></li>
+                    <li class="droplist"><a href="#">Lehenga Cholis</a></li>
+                    <li class="droplist"><a href="#">Dupattas & Shawls</a></li>
+            </ul>
+        </div>
+
+         <div class="column">
+          
+          <ul class="ulhead">
+            <h5><li class="droplist h1" ><a href="#">Indian & Fusion Wear</a></li></h5>
+                       
+
+                    <li class="droplist " ><a href="#">Kurtas & Suits</a></li>
+                  <li class="droplist" ><a href="#">Kurtis, Tunics & Tops</a></li>
+                    <li class="droplist"><a href="#">Ethnic Wear</a></li>
+                    <li class="droplist"><a href="#">Leggings, Salwars </a></li>
+                    <li class="droplist"><a href="#">Skirts & Palazzos</a></li>
+                    <li class="droplist"><a href="#">Dress Materials</a></li>
+                    <li class="droplist"><a href="#">Lehenga Cholis</a></li>
+                    <li class="droplist"><a href="#">Dupattas & Shawls</a></li>
+              </ul>
+            </div>
+
+         <div class="column">
+          
+          <ul class="ulhead">
+           <li class="droplist h1"/>
+            <h5><li class="droplist h1" ><a href="#">Indian & Fusion Wear</a></li></h5>
+
+                  <li class="droplist"><a href="#">Kurtas & Suits</a></li>
+                <li class="droplist" ><a href="#">Kurtis, Tunics & Tops</a></li>
+                  <li class="droplist"><a href="#">Ethnic Wear</a></li>
+                  <li class="droplist"><a href="#">Leggings, Salwars </a></li>
+                  <li class="droplist"><a href="#">Skirts & Palazzos</a></li>
+                  <li class="droplist"><a href="#">Dress Materials</a></li>
+                  <li class="droplist"><a href="#">Lehenga Cholis</a></li>
+                  <li class="droplist"><a href="#">Dupattas & Shawls</a></li> 
+                 <hr/>
+             <h5><li class="droplist h1" ><a href="#">Wearables </a></li></h5>
+            <h5><li class="droplist h1" ><a href="#">Watches &More</a></li></h5>
+            <h5><li class="droplist h1" ><a href="#">Bags</a></li></h5>
+
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+              
+
+            <div class="dropdown">
+                <li><a class="dropbtn"  id="menbot3"href="#">HOME & LIVING</a></li>
+
+                    
+                    <div class="dropdown-content">
+                      
+                      <div class="row">
+                        <div class="column">
+                          <ul class="ulhead">
+                            <h5><li class="droplist h1" ><a href="#">Indian & Fusion Wear</a></li></h5>
+
+                  <li class="droplist h1"><a href="#">Kurtas & Suits</a></li>
+                  <li class="droplist" ><a href="#">Kurtis, Tunics & Tops</a></li>
+                    <li class="droplist"><a href="#">Ethnic Wear</a></li>
+                    <li class="droplist"><a href="#">Leggings, Salwars</a></li>
+              <h5><li class="droplist h1" ><a href="#">Watches &More</a></li></h5>
+              <h5><li class="droplist h1" ><a href="#">Bags</a></li></h5>
+                    <li class="droplist"><a href="#">Skirts & Palazzos</a></li>
+                    <li class="droplist"><a href="#">Dress Materials</a></li>
+                    <li class="droplist"><a href="#">Lehenga Cholis</a></li>
+                    <li class="droplist"><a href="#">Dupattas & Shawls</a></li>
+                  </ul>
+              </div>
+
+        <div class="column">
+          <ul class="ulhead">
+            <h5><li class="droplist h1" ><a href="#">Indian & Fusion Wear</a></li></h5>
+
+                    <li class="droplist"><a href="#">Kurtas & Suits</a></li>
+                  <li class="droplist" ><a href="#">Kurtis, Tunics & Tops</a></li>
+                    <li class="droplist"><a href="#">Ethnic Wear</a></li>
+                    <li class="droplist"><a href="#">Leggings, Salwars </a></li>
+                    <li class="droplist"><a href="#">Skirts & Palazzos</a></li>
+                    <li class="droplist"><a href="#">Dress Materials</a></li>
+                    <li class="droplist"><a href="#">Lehenga Cholis</a></li>
+                    <li class="droplist"><a href="#">Dupattas & Shawls</a></li>
+                    </ul>
+        </div>
+
+        <div class="column">
+          
+          <ul class="ulhead">
+            <h5><li class="droplist h1" ><a href="#">Indian & Fusion Wear</a></li></h5>
+            <h5><li class="droplist h1" ><a href="#">Watches &More</a></li></h5>
+            <h5><li class="droplist h1" ><a href="#"> Bags & purses</a></li></h5>
+                  <li class="droplist"><a href="#">Kurtas & Suits</a></li>
+                <li class="droplist" ><a href="#">Kurtis, Tunics & Tops</a></li>
+                  <li class="droplist"><a href="#">Ethnic Wear</a></li>
+                  <li class="droplist"><a href="#">Leggings, Salwars </a></li>
+                  <li class="droplist"><a href="#">Skirts & Palazzos</a></li>
+                  <li class="droplist"><a href="#">Dress Materials</a></li>
+                  <li class="droplist"><a href="#">Lehenga Cholis</a></li>
+                  <li class="droplist"><a href="#">Dupattas & Shawls</a></li>
+                  </ul>
+                </div>
+            <div class="column">
+          
+          <ul class="ulhead">
+            <h5><li class="droplist h1" ><a href="#">Indian & Fusion Wear</a></li></h5>
+                       
+
+                  <li class="droplist " ><a href="#">Kurtas & Suits</a></li>
+                  <li class="droplist" ><a href="#">Kurtis, Tunics & Tops</a></li>
+                    <li class="droplist"><a href="#">Ethnic Wear</a></li>
+                    <li class="droplist"><a href="#">Leggings, Salwars </a></li>
+                    <li class="droplist"><a href="#">Skirts & Palazzos</a></li>
+                    <li class="droplist"><a href="#">Dress Materials</a></li>
+                    <li class="droplist"><a href="#">Lehenga Cholis</a></li>
+                    <li class="droplist"><a href="#">Dupattas & Shawls</a></li>
+                    </ul>
+              </div>
+
+         <div class="column">
+          
+          <ul class="ulhead">
+           <li class="droplist h1" 
+            <h5><li class="droplist h1" ><a href="#">Indian & Fusion Wear</a></li></h5>
+
+                  <li class="droplist"><a href="#">Kurtas & Suits</a></li>
+                  <li class="droplist" ><a href="#">Kurtis, Tunics & Tops</a></li>
+                    <li class="droplist"><a href="#">Ethnic Wear</a></li>
+                    <li class="droplist"><a href="#">Leggings, Salwars </a></li>
+                    <li class="droplist"><a href="#">Skirts & Palazzos</a></li>
+                    <li class="droplist"><a href="#">Dress Materials</a></li>
+                    <li class="droplist"><a href="#">Lehenga Cholis</a></li>
+                    <li class="droplist"><a href="#">Dupattas & Shawls</a></li>
+                 <hr/>
+               <h5><li class="droplist h1" ><a href="#">Wearables </a></li></h5>
+              <h5><li class="droplist h1" ><a href="#">Watches &More</a></li></h5>
+                <h5><li class="droplist h1" ><a href="#">Bags</a></li></h5>
+
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>  
+
+<div class="dropdown">
+                  <li><a class="dropbtn" id="menbot4" href="#">BEAUTY</a></li>
+
+    
+    <div class="dropdown-content">
+      
+      <div class="row">
+        <div class="column">
+          <ul class="ulhead">
+            <h5><li class="droplist h1" ><a href="#">Indian & Fusion Wear</a></li></h5>
+
+                    <li class="droplist h1"><a href="#">Kurtas & Suits</a></li>
+                  <li class="droplist" ><a href="#">Kurtis, Tunics & Tops</a></li>
+                    <li class="droplist"><a href="#">Ethnic Wear</a></li>
+                    <li class="droplist"><a href="#">Leggings, Salwars</a></li>
+              <h5><li class="droplist h1" ><a href="#">Watches &More</a></li></h5>
+             <h5><li class="droplist h1" ><a href="#">Bags</a></li></h5>
+                  <li class="droplist"><a href="#">Skirts & Palazzos</a></li>
+                  <li class="droplist"><a href="#">Dress Materials</a></li>
+                  <li class="droplist"><a href="#">Lehenga Cholis</a></li>
+                  <li class="droplist"><a href="#">Dupattas & Shawls</a></li>
+           </ul>
+        </div>
+        <div class="column">
+          <ul class="ulhead">
+            <h5><li class="droplist h1" ><a href="#">Indian & Fusion Wear</a></li></h5>
+
+                  <li class="droplist"><a href="#">Kurtas & Suits</a></li>
+                <li class="droplist" ><a href="#">Kurtis, Tunics & Tops</a></li>
+                  <li class="droplist"><a href="#">Ethnic Wear</a></li>
+                  <li class="droplist"><a href="#">Leggings, Salwars </a></li>
+                  <li class="droplist"><a href="#">Skirts & Palazzos</a></li>
+                  <li class="droplist"><a href="#">Dress Materials</a></li>
+                  <li class="droplist"><a href="#">Lehenga Cholis</a></li>
+                  <li class="droplist"><a href="#">Dupattas & Shawls</a></li>
+                  </ul>
+        </div>
+
+        <div class="column">
+          
+          <ul class="ulhead">
+            <h5><li class="droplist h1" ><a href="#">Indian & Fusion Wear</a></li></h5>
+            <h5><li class="droplist h1" ><a href="#">Watches &More</a></li></h5>
+            <h5><li class="droplist h1" ><a href="#"> Bags & purses</a></li></h5>
+                  <li class="droplist"><a href="#">Kurtas & Suits</a></li>
+                <li class="droplist" ><a href="#">Kurtis, Tunics & Tops</a></li>
+                  <li class="droplist"><a href="#">Ethnic Wear</a></li>
+                  <li class="droplist"><a href="#">Leggings, Salwars </a></li>
+                  <li class="droplist"><a href="#">Skirts & Palazzos</a></li>
+                  <li class="droplist"><a href="#">Dress Materials</a></li>
+                  <li class="droplist"><a href="#">Lehenga Cholis</a></li>
+                  <li class="droplist"><a href="#">Dupattas & Shawls</a></li>
+                  </ul>
+        </div>
+
+         <div class="column">
+          
+          <ul class="ulhead">
+            <h5><li class="droplist h1" ><a href="#">Indian & Fusion Wear</a></li></h5>
+                       
+
+                    <li class="droplist " ><a href="#">Kurtas & Suits</a></li>
+                  <li class="droplist" ><a href="#">Kurtis, Tunics & Tops</a></li>
+                    <li class="droplist"><a href="#">Ethnic Wear</a></li>
+                    <li class="droplist"><a href="#">Leggings, Salwars </a></li>
+                    <li class="droplist"><a href="#">Skirts & Palazzos</a></li>
+                    <li class="droplist"><a href="#">Dress Materials</a></li>
+                    <li class="droplist"><a href="#">Lehenga Cholis</a></li>
+                    <li class="droplist"><a href="#">Dupattas & Shawls</a></li>
+            </ul>
+        </div>
+         <div class="column">
+          
+          <ul class="ulhead">
+           <li class="droplist h1" >
+            <h5><li class="droplist h1" ><a href="#">Indian & Fusion Wear</a></li></h5>
+
+                    <li class="droplist"><a href="#">Kurtas & Suits</a></li>
+                  <li class="droplist" ><a href="#">Kurtis, Tunics & Tops</a></li>
+                    <li class="droplist"><a href="#">Ethnic Wear</a></li>
+                    <li class="droplist"><a href="#">Leggings, Salwars </a></li>
+                    <li class="droplist"><a href="#">Skirts & Palazzos</a></li>
+                    <li class="droplist"><a href="#">Dress Materials</a></li>
+                    <li class="droplist"><a href="#">Lehenga Cholis</a></li>
+                    <li class="droplist"><a href="#">Dupattas & Shawls</a></li>
+                 <hr/>
+              <h5><li class="droplist h1" ><a href="#">Wearables </a></li></h5>
+               <h5><li class="droplist h1" ><a href="#">Watches &More</a></li></h5>
+              <h5><li class="droplist h1" ><a href="#">Bags</a></li></h5>
+
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+<div class="dropdown " >
+         <button class="dropbtn" id="menbot5" href="#">STUDIO<sup>NEW</sup></button> 
+<div class="outerDiv" >
+
+  <div style = "display: flex; flex-direction: column; align-items: center;" id="studioId" class="dropdown-content" >
+              <img class="studio" src="https://constant.myntassets.com/web/assets/img/studio-logo-new.svg">
+                  <p >your daily inspiration for evrything fastion</p>
+               <IMG width="50%"class="vkimg"src="https://constant.myntassets.com/web/assets/img/sudio-nav-banner.png">
+                  <button class="studiobtn">Explore Studio</button>
+
+            </div>
+             
+
+          <div style = "" id="studioId" class="dropdown-content" >
+              <img class="studio" src="https://constant.myntassets.com/web/assets/img/studio-logo-new.svg">
+                  <p >your daily inspiration for evrything fastion</p>
+               <IMG width="50%"class="vkimg"src="https://constant.myntassets.com/web/assets/img/sudio-nav-banner.png">
+                  <button class="studiobtn">Explore Studio</button>
+
+            </div>
+          </ul>
+        </div>
+       </div>
+
+  </div>          
+
+
+
+
+
+
+
+                 
+
+
+        
+          <div class="right flex item-center ">
+           
+<input class="serchbar" type="text" placeholder="Serch for products,brand and more" >
+
+  
+<div class="proicon">
+<i  class="fa fa-user icon"></i>
+</div>
+<div class="proicon mx item-center" >Profile
+    
+</div>
+<i  class="fa fa-heart icon item-center"></i>
+
+<div class="Whislist mx">Whislist
+    
+</div>
+<i style="font-size:18px ;" class="fa">&#xf290;</i>
+<div class="Bag mx">bag
+    
+</div>
+
+
+
+          </div>
+        </nav>
+
+      </div>
+    
+    </header>
+    
+    <section >
+      <div>
+        <div >
+
+               <img width="100%" class="token" src="https://assets.myntassets.com/f_webp,w_980,c_limit,fl_progressive,dpr_2.0/assets/images/2023/12/20/ef679dc6-c30e-4684-ba09-c8541a1e999b1703010892608-Coupon-400.jpg">
+
+        </div>
+          <div >
+            <img class="imgcover" src="imgcover.png">
+          </div>
+
+          <div >
+            <img class="coupen" src="https://assets.myntassets.com/f_webp,w_980,c_limit,fl_progressive,dpr_2.0/assets/images/2023/12/18/0243cbd6-5a99-4f50-9d12-fefaee87c5701702912500112-Coupons-Corner.jpg">
+          </div>
+
+          <div >
+            <img class="coupen1" src="coupen.png">
+          </div>
+
+<div class="flex responsive">
+ 
+
+        <div class="flex">
+          <img class="shop" width="100%"src="https://assets.myntassets.com/f_webp,w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2023/12/19/f6bd6875-9700-49e4-b3c0-cf85b62ab78e1702957366706-image_png1696280573.png">
+        </div>
+        <div class="flex ">
+          <img class="shop" width="100%"src="https://assets.myntassets.com/f_webp,w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2023/12/19/bba5e553-1b75-40e9-9a0a-c220510f17651702957366696-image_png_920379730.png">
+        </div>
+        <div class="flex ">
+          <img class="shop" width="100%"src="https://assets.myntassets.com/f_webp,w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2023/12/19/32f7f4b0-e752-4857-980b-cfd093e080dd1702958023660-image_png868077996.png">
+        </div>
+        <div class="flex ">
+          <img class="shop" width="100%"src="https://assets.myntassets.com/f_webp,w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2023/12/13/ee99564b-3b17-42ad-ab79-b41abd384a811702463136981-HRX-_Slazenger_starting_259_899.png">
+        </div>
+        <div class="flex ">
+          <img class="shop" width="100%"src="https://assets.myntassets.com/f_webp,w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2023/12/19/8261f007-5eed-4843-8e46-8c9b73089c091702957615456-image_png158415798.png">
+        </div>
+        <div class="flex ">
+          <img class="shop" width="100%"src="https://assets.myntassets.com/f_webp,w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2023/12/17/97103f06-a7a6-4d23-b009-9a54b1a0f52d1702807767635-download---2023-12-17T153916.933.png">
+        </div>
+
+  
+
+  
+</div>
+
+      <div >
+            <img class="coupen2" src="https://assets.myntassets.com/f_webp,w_980,c_limit,fl_progressive,dpr_2.0/assets/images/2023/12/18/f5b1e4f6-85f9-4dd3-9fdd-b9fd61d1b34d1702913688331-Category-Specials.jpg">
+          </div>
+
+
+
+        <div class="flex">
+
+            <div class="flex">
+              <img class="shop" width="100%"src="https://assets.myntassets.com/f_webp,w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2023/12/18/902cce65-f829-4bb5-8e39-d6cdf0e291231702918143840-Shop-By-Category_WP_02.jpg">
+            </div>
+            <div class="flex ">
+              <img class="shop" width="100%"src="https://assets.myntassets.com/f_webp,w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2023/12/18/8370824c-25b8-40f7-88b6-7a09b7df147a1702918143876-Shop-By-Category_WP_03.jpg">
+            </div>
+            <div class="flex ">
+              <img class="shop" width="100%"src="https://assets.myntassets.com/f_webp,w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2023/12/18/77eb0740-7db9-4cd6-9805-3c4ac9f2d7301702918143765-Shop-By-Category_WP_04.jpg">
+            </div>
+            <div class="flex ">
+              <img class="shop" width="100%"src="https://assets.myntassets.com/f_webp,w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2023/12/18/43355801-9fd7-4443-8230-a6671af9f3531702918143828-Shop-By-Category_WP_05.jpg">
+            </div>
+            <div class="flex ">
+              <img class="shop" width="100%"src="https://assets.myntassets.com/f_webp,w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2023/12/18/2247e20e-2c7d-4ce5-971e-2ee441bf987e1702918143738-Shop-By-Category_WP_06.jpg">
+            </div>
+            <div class="flex ">
+              <img class="shop" width="100%"src="https://assets.myntassets.com/f_webp,w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2023/12/18/0662fcf1-1df4-4eeb-be7c-3816d387c4971702918143751-Shop-By-Category_WP_07.jpg">
+            </div>
+          </div>
+
+              <div class="flex">
+
+                <div class="flex">
+                  <img class="shop" width="100%"src="https://assets.myntassets.com/f_webp,w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2023/12/18/70081222-a79d-4290-b401-e1ac7fe948c81702918143723-Shop-By-Category_WP_08.jpg">
+                </div>
+                <div class="flex ">
+                  <img class="shop" width="100%"src="https://assets.myntassets.com/f_webp,w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2023/12/18/f613e82d-41cc-43d0-b6a7-d333905028ac1702918143710-Shop-By-Category_WP_09.jpg">
+                </div>
+                <div class="flex ">
+                  <img class="shop" width="100%"src="https://assets.myntassets.com/f_webp,w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2023/12/18/48462d1b-ba36-40d6-be52-8401f6e3e4471702918143852-Shop-By-Category_WP_10.jpg">
+                </div>
+                <div class="flex ">
+                  <img class="shop" width="100%"src="https://assets.myntassets.com/f_webp,w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2023/12/18/d49c8055-8af7-4a13-9631-a9a54d4f34041702918143784-Shop-By-Category_WP_11.jpg">
+                </div>
+                <div class="flex ">
+                  <img class="shop" width="100%"src="https://assets.myntassets.com/f_webp,w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2023/12/18/eac7edcb-e718-4a65-abcc-70a95509a6051702918143796-Shop-By-Category_WP_12.jpg">
+                </div>
+                <div class="flex ">
+                  <img class="shop" width="100%"src="https://assets.myntassets.com/f_webp,w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2023/12/18/b2f7e5e1-417d-496f-8e7f-dd8607fb9a461702918143696-Shop-By-Category_WP_13.jpg">
+              </div>
+                
+              </div>
+                        <div >
+                          <img class="coupen2" src="https://assets.myntassets.com/f_webp,w_980,c_limit,fl_progressive,dpr_2.0/assets/images/2023/12/18/8027075b-f5f3-4788-a5d4-ac9e401b530e1702913970215-App-Install-Banner.jpg">
+                        </div>
+                      
+
+                        
+
+                    </div>
+
+                    
+                      
+    </section>
+    
+    
+    <div>
+
+       
+      <footer>
+<div class="flex ">
+               <div class="flex fcoloum">
+                <ul>
+                  <strong><li class="colf headgap">Online Shopping</li></strong>
+                  <li class="colf"> Men</li>
+                  <li class="colf"> Women</li>
+                  <li class="colf"> Kids</li>
+                  <li class="colf"> Home & Living</li>
+                  <li class="colf"> Beauty</li>
+                   <li class="colf"> GiftCards</li>
+                   <li class="colf">MyntraInsiders</li>
+
+                   <strong><li class="colf headgap">Useful links</li></strong>
+                  <li class="colf"> Blog</li>
+                  <li class="colf"> careers</li>
+                  <li class="colf"> SiteMap</li>
+                  <li class="colf"> Corporate Information</li>
+
+</ul>
+               </div>
+
+               <div class="flex fcoloum">
+                <ul>
+                <strong><li class="colf headgap"> Customer polices</li></strong>
+ <li class="colf"> Contact us</li>
+                    <li class="colf"> FAQ</li>
+                   <li class="colf"> T&C</li>
+                   <li class="colf">Termous Of Use</li>
+                   <li class="colf"> Track Orders</li>
+                    <li class="colf"> Shipping</li>
+                   <li class="colf"> Cancelation</li>
+                   <li class="colf"> Return</li>
+                   <li class="colf"> Privacy policies</li>
+
+                  
+                </ul>
+               </div>
+
+               <div class=" fcoloum2">
+                <h5>Experience myntra app On mobile</h5>
+                <div  class="flex buttn">
+                  <div class="flex">
+                    <img class="playb" src="https://constant.myntassets.com/web/assets/img/80cc455a-92d2-4b5c-a038-7da0d92af33f1539674178924-google_play.png">
+                  </div>
+                  <div class="flex">
+                    <img class="playb" src="https://constant.myntassets.com/web/assets/img/bc5e11ad-0250-420a-ac71-115a57ca35d51539674178941-apple_store.png">
+                  </div>
+                </div>
+
+                <h5>Keep In touch</h5>
+                <div  class="flex">
+                  <div class="flex">
+                    <img class="playb1" src="https://constant.myntassets.com/web/assets/img/d2bec182-bef5-4fab-ade0-034d21ec82e31574604275433-fb.png">
+                  </div>
+                  <div class="flex">
+                    <img class="playb1" src="https://constant.myntassets.com/web/assets/img/f10bc513-c5a4-490c-9a9c-eb7a3cc8252b1574604275383-twitter.png">
+                  </div>
+                   <div class="flex">
+                    <img class="playb1" src="	https://constant.myntassets.com/web/assets/img/a7e3c86e-566a-44a6-a733-179389dd87111574604275355-yt.png">
+                  </div>
+                  <div class="flex">
+                    <img class="playb1" src="https://constant.myntassets.com/web/assets/img/b4fcca19-5fc1-4199-93ca-4cae3210ef7f1574604275408-insta.png">
+                  </div>
+                </div>
+               </div>
+<div>
+               <div class="flex">
+                  <div class="flex">
+                    <img class="og" src="https://constant.myntassets.com/web/assets/img/6c3306ca-1efa-4a27-8769-3b69d16948741574602902452-original.png">
+                  </div>
+                  <div>
+                    <strong>100% Orignal</strong>
+                     guarantee for all products at myntra.com
+                  </div>
+               </div>
+               <div class="flex secdiv">
+                  <div class="flex">
+                    <img class="og1" src="https://assets.myntassets.com/assets/images/retaillabs/2023/5/22/becb1b16-86cc-4e78-bdc7-7801c17947831684737106127-Return-Window-image.png">
+                  </div>
+                  <div class="sideleft">
+                    <strong>Return Within 14 Days</strong>
+                     of receiving your order
+                  </div>
+               </div>
+               </div>
+              </div>
+                </div>
+                <div class="footdiv">
+        <div class="pop">
+          
+          <h3 class="h4 ">Populer Search</h3>
+          
+          
+        </div>
+        
+        <div class="pserch">
+          <a href="#">Punjabi Suits |</a>
+         <a href="#">Anarkali |</a>
+
+        <a href="#">Lingeries |</a>
+         <a href="#">rakhi 2020 |</a>
+          <a href="#">Wedegs |</a>
+           <a href="#">Jackets for women |</a>
+            <a href="#">Bra |</a>
+             <a href="#">Leggigs |</a>
+              <a href="#">Kanjivaram Saree |</a>
+               <a href="#">Dupattas |</a>
+                <a href="#">Anklets |</a>
+                 <a href="#">Jeggings |</a>
+                  <a href="#">Panties |</a>
+                   <a href="#">Image |</a>
+                    <a href="#">W |</a>
+                     <a href="#">Samnsang |</a>
+                      <a href="#">Real Madrird |</a>
+                       <a href="#">saree |</a>
+                        <a href="#">Dresses |</a>
+                         <a href="#">PlazooPants |</a>
+                          <a href="#">Shrug |</a>
+                           <a href="#">Lehangas |</a>
+                           <a href="#">Kanjivaram Saree |</a>
+               <a href="#">Kurtas |</a>
+                <a href="#">earing |</a>
+                 <a href="#">Bikini |</a>
+                  <a href="#"> women Sweters |</a>
+                   <a href="#">Swimwear |</a>
+                    <a href="#">Nightweare |</a>
+                     <a href="#">Nail Polish |</a>
+                      <a href="#">HalterBra |</a>
+                       <a href="#">Dungrees |</a>
+                        <a href="#">Gorgeatte sarees |</a>
+                         <a href="#">wtaches |</a>
+                          <a href="#">Meackup |</a>
+                           <a href="#">Nackles |</a>
+                            <a href="#"> women Sweters |</a>
+                   <a href="#">Sharara |</a>
+                    <a href="#">Hotpants |</a>
+                     <a href="#">Cotton salwar Suit |</a>
+                      <a href="#">Rompers |</a>
+                       <a href="#">Night Dreses |</a>
+                        <a href="#">skirts |</a>
+                         <a href="#">Stokings |</a>
+                          <a href="#">Women Skirts |</a>
+                           <a href="#">Eyeliners |</a>
+                           <a href="#">Rompers |</a>
+                       <a href="#">Lipstick |</a>
+                        <a href="#">Bangles |</a>
+                         <a href="#">Designer Blouse |</a>
+                          <a href="#">tops |</a>
+                           <a href="#">OnePiece Dresses |</a>
+
+
+
+                            
+        </div>
+         <div>
+            <h4 class="dropbtn1 h4">ONLINE SHOPPING FOR WOMEN:MYNTRA ALL THE WAY</h4>
+            <p class="pf">
+            While a few online shopping sites for women might focus on apparel, others on ethnic wear, and yet others on home décor, Myntra brings you everything under one roof. Here is a list of must-haves from the wide variety of awesome products at Myntra:        </div>
+              <ol>
+                <li class="pf1">Your online shopping clothes’ list should include a healthy mix of apparel suitable for casual, formal and festive occasions. Look cool in T-shirts, tops and jeans. Ooze maximum oomph with our top-of-the-range dresses. Climb up the corporate ladder with chic formal wear. Try the ethnic touch with our pretty printed-kurtas, Patiala salwars and dhotis. Stride into a wedding with confidence in a lehenga choli or an elegant saree.</li>
+                <li class="pf1">If you are generally reluctant to step out to purchase innerwear for women online shopping provides a comfortable, private setting where you can shop in peace. Right from basic bras and briefs, to shape wear and swimwear, we have an option for each of your needs. You can include in your online clothes’ shopping list cosy winter wear and sporty sweatshirts and tracksuits as well.</li>
+              <li class="pf1">Once you are done with your online clothes’ shopping, it is time to buy smart jewellery. Our range of pretty rings, necklaces, bracelets and more have been crafted to highlight your natural beauty. You can find smart accessories here as well such as handbags, purses, sunglasses and beautiful analogue and digital watches for any occasion.</li>
+                <li class="pf1">Your online women’s shopping adventure should include a trip to our footwear section. Feel fabulous in fine footwear from the best brands crafted to perfection. Be it handcrafted mojaris and juttis or single-toe flats from our ethnic section, or pumps and peep-toe shoes from our western section, you are sure to be dressed to impress.</li>
+            
+            </ol>
+            <p class="pf">And there are more fabulous products such as sportswear, blazers, gowns, dress material, bath accessories, kajal and makeup for women online. The women’s online shopping experience at Myntra is filled with unlimited choices!</p>
+        <div>
+            <h4 class="dropbtn1 h4">ONLINE SHOPPING FOR WOMEN: CLOTHES, ACCESSORIES, FOOTWEAR, AND MORE</h4>
+            <p class="pf">
+              When it comes to women, shopping is more than just a therapy. We believe that it is a joyous activity where you get to choose a whole new lifestyle. If you would like access to a wide variety of products for women online shopping is the way to go. And of all the online shopping sites for women, Myntra is the place to find the finest brands of women’s fashion and lifestyle products. The women’s shopping range at Myntra includes the best price merchandise of top-notch quality.            </p>
+        </div>
+
+        <div>
+<h4 class="dropbtn1 h4">ONLINE SHOPPING FOR WOMEN MADE EASY</h4>
+<p class="pf">
+  The women’s shopping experience at a physical store is fraught with problems. Long payment queues, crowded shops and struggles for parking spaces are not enjoyable. At Myntra you can complete your shopping and make your payment in a jiffy. Just a few clicks, or a few taps on your smartphone, and you are done! Enjoy your online women’s shopping journey at Myntra and get set to redefine your lifestyle.
+</p>
+        </div>
+        </div>
+    </footer>
+    </div>
+   
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.4.1/jquery-migrate.min.js" integrity="sha512-KgffulL3mxrOsDicgQWA11O6q6oKeWcV00VxgfJw4TcM8XRQT8Df9EsrYxDf7tpVpfl3qcYD96BpyPvA4d1FDQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  </body>
+</html>

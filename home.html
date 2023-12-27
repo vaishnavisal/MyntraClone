@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="home.css" />
+        <link rel="stylesheet" href="slick-theme.css" />
+
+            <link rel="stylesheet" href="slick-theme.css" />
+
     <link rel="stylesheet" href="home.js" />
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
@@ -20,10 +24,11 @@
         <header >
             <nav class=" flex" >
                 <div class="left flex item-center gaplogo ">
+                  <div class=" flex" >
                   <a class="navbar-brand" href="">
                     <img class="logo" src="data:image/png;base64,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"/>
                   </a>
-
+                  </div>
               
                    <ul class=" flex justify-center item-center ">
                    <div class="dropdown">
@@ -104,21 +109,21 @@
             <div class="column">
           
           <ul class="ulhead">
-                <h5><li class="droplist h1" ><a href="#">Indian & Fusion Wear</a></li></h5>
-                       
+            <h5><li class="droplist h1" ><a href="#">Indian & Fusion Wear</a></li></h5>
+            
+                                <li class="droplist " ><a href="#">Kurtas & Suits</a></li>
+                                <li class="droplist" ><a href="#">Kurtis, Tunics & Tops</a></li>
+                                <li class="droplist"><a href="#">Ethnic Wear</a></li>
+                                <li class="droplist"><a href="#">Leggings, Salwars </a></li>
+                                <li class="droplist"><a href="#">Skirts & Palazzos</a></li>
+                                <li class="droplist"><a href="#">Dress Materials</a></li>
+                                <li class="droplist"><a href="#">Lehenga Cholis</a></li>
+                                <li class="droplist"><a href="#">Dupattas & Shawls</a></li>
+          </ul>
+              </div>
 
-                    <li class="droplist " ><a href="#">Kurtas & Suits</a></li>
-                    <li class="droplist" ><a href="#">Kurtis, Tunics & Tops</a></li>
-                    <li class="droplist"><a href="#">Ethnic Wear</a></li>
-                    <li class="droplist"><a href="#">Leggings, Salwars </a></li>
-                    <li class="droplist"><a href="#">Skirts & Palazzos</a></li>
-                    <li class="droplist"><a href="#">Dress Materials</a></li>
-                    <li class="droplist"><a href="#">Lehenga Cholis</a></li>
-                    <li class="droplist"><a href="#">Dupattas & Shawls</a></li>
-                    </ul>
-                  </div>
-              <div class="column">
-          
+
+                          <div class="column">
           <ul class="ulhead">
                       <li class="droplist h1" >
             <h5><li class="droplist h1" ><a href="#">Indian & Fusion Wear</a></li></h5>
@@ -541,7 +546,7 @@
             </div>
              
 
-          <div style = "" id="studioId" class="dropdown-content" >
+          <div id="studioId" class="dropdown-content" >
               <img class="studio" src="https://constant.myntassets.com/web/assets/img/studio-logo-new.svg">
                   <p >your daily inspiration for evrything fastion</p>
                <IMG width="50%"class="vkimg"src="https://constant.myntassets.com/web/assets/img/sudio-nav-banner.png">
@@ -565,55 +570,88 @@
 
         
           <div class="right flex item-center ">
-           
-<input class="serchbar" type="text" placeholder="Serch for products,brand and more" >
+              <div class="flex">
+                <input class="serchbar" type="text" placeholder="Serch for products,brand and more" >
+              </div>
 
-  
-<div class="proicon">
-<i  class="fa fa-user icon"></i>
-</div>
-<div class="proicon mx item-center" >Profile
-    
-</div>
-<i  class="fa fa-heart icon item-center"></i>
+              <div class="righticons">
+              <ul class="flex ">
+                <li class="flex profilediv item-center">
+                  <i  class="fa fa-user icon proicon profile"></i>
+                  <span class=" " >Profile</span>
+                </li>
+                
+                <li class="flex  profilediv item-center">
+                  <i  class="fa fa-heart icon item-center proicon"></i>
+                  <span class=" ">Whislist</span>
+                </li>
 
-<div class="Whislist mx">Whislist
-    
-</div>
-<i style="font-size:18px ;" class="fa">&#xf290;</i>
-<div class="Bag mx">bag
-    
-</div>
+                <li class="flex  profilediv item-center">
+                  <i  class="fa proicon item-center proicon ">&#xf290;</i>
+                  <span class="">bag</span>
+                <li>
+              </ul>
+              </div>
 
+         </div>
+  </nav>
 
-
-          </div>
-        </nav>
-
-      </div>
+      
     
     </header>
+
+    
     
     <section >
-      <div>
-        <div >
+      
+      <div class="bammer-img1">
+        <img  class="token" src="https://assets.myntassets.com/f_webp,w_980,c_limit,fl_progressive,dpr_2.0/assets/images/2023/12/20/ef679dc6-c30e-4684-ba09-c8541a1e999b1703010892608-Coupon-400.jpg">
+      </div>
 
-               <img width="100%" class="token" src="https://assets.myntassets.com/f_webp,w_980,c_limit,fl_progressive,dpr_2.0/assets/images/2023/12/20/ef679dc6-c30e-4684-ba09-c8541a1e999b1703010892608-Coupon-400.jpg">
 
-        </div>
-          <div >
-            <img class="imgcover" src="imgcover.png">
+          <div class="bammer-img1" >
+            <img  src="imgcover.png">
           </div>
 
-          <div >
+          <div class="bammer-img1">
             <img class="coupen" src="https://assets.myntassets.com/f_webp,w_980,c_limit,fl_progressive,dpr_2.0/assets/images/2023/12/18/0243cbd6-5a99-4f50-9d12-fefaee87c5701702912500112-Coupons-Corner.jpg">
           </div>
 
-          <div >
+          <div class="bigsale">
             <img class="coupen1" src="coupen.png">
           </div>
+          
+          <div class="  responsive1">
+          <div class="flex ">
 
-<div class="flex responsive">
+        <div class="flex">
+          <img class="shop" width="100%"src="https://assets.myntassets.com/f_webp,w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2023/12/19/f6bd6875-9700-49e4-b3c0-cf85b62ab78e1702957366706-image_png1696280573.png">
+        </div>
+        <div class="flex ">
+          <img class="shop" width="100%"src="https://assets.myntassets.com/f_webp,w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2023/12/19/bba5e553-1b75-40e9-9a0a-c220510f17651702957366696-image_png_920379730.png">
+        </div>
+        <div class="flex ">
+          <img class="shop" width="100%"src="https://assets.myntassets.com/f_webp,w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2023/12/19/32f7f4b0-e752-4857-980b-cfd093e080dd1702958023660-image_png868077996.png">
+        </div>
+        <div class="flex ">
+          <img class="shop" width="100%"src="https://assets.myntassets.com/f_webp,w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2023/12/13/ee99564b-3b17-42ad-ab79-b41abd384a811702463136981-HRX-_Slazenger_starting_259_899.png">
+        </div>
+        <div class="flex ">
+          <img class="shop" width="100%"src="https://assets.myntassets.com/f_webp,w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2023/12/19/8261f007-5eed-4843-8e46-8c9b73089c091702957615456-image_png158415798.png">
+        </div>
+        <div class="flex ">
+          <img class="shop" width="100%"src="https://assets.myntassets.com/f_webp,w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2023/12/17/97103f06-a7a6-4d23-b009-9a54b1a0f52d1702807767635-download---2023-12-17T153916.933.png">
+        </div>
+
+  
+
+  
+</div>
+
+
+
+
+<div class="flex ">
  
 
         <div class="flex">
@@ -640,13 +678,43 @@
   
 </div>
 
-      <div >
+
+
+
+<div class="flex ">
+ 
+
+        <div class="flex">
+          <img class="shop" width="100%"src="https://assets.myntassets.com/f_webp,w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2023/12/19/f6bd6875-9700-49e4-b3c0-cf85b62ab78e1702957366706-image_png1696280573.png">
+        </div>
+        <div class="flex ">
+          <img class="shop" width="100%"src="https://assets.myntassets.com/f_webp,w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2023/12/19/bba5e553-1b75-40e9-9a0a-c220510f17651702957366696-image_png_920379730.png">
+        </div>
+        <div class="flex ">
+          <img class="shop" width="100%"src="https://assets.myntassets.com/f_webp,w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2023/12/19/32f7f4b0-e752-4857-980b-cfd093e080dd1702958023660-image_png868077996.png">
+        </div>
+        <div class="flex ">
+          <img class="shop" width="100%"src="https://assets.myntassets.com/f_webp,w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2023/12/13/ee99564b-3b17-42ad-ab79-b41abd384a811702463136981-HRX-_Slazenger_starting_259_899.png">
+        </div>
+        <div class="flex ">
+          <img class="shop" width="100%"src="https://assets.myntassets.com/f_webp,w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2023/12/19/8261f007-5eed-4843-8e46-8c9b73089c091702957615456-image_png158415798.png">
+        </div>
+        <div class="flex ">
+          <img class="shop" width="100%"src="https://assets.myntassets.com/f_webp,w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2023/12/17/97103f06-a7a6-4d23-b009-9a54b1a0f52d1702807767635-download---2023-12-17T153916.933.png">
+        </div>
+
+  
+
+  
+</div>
+</div>
+      <div class="bammer-img1" >
             <img class="coupen2" src="https://assets.myntassets.com/f_webp,w_980,c_limit,fl_progressive,dpr_2.0/assets/images/2023/12/18/f5b1e4f6-85f9-4dd3-9fdd-b9fd61d1b34d1702913688331-Category-Specials.jpg">
           </div>
 
 
 
-        <div class="flex">
+        <div class="flex bammer-img1">
 
             <div class="flex">
               <img class="shop" width="100%"src="https://assets.myntassets.com/f_webp,w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2023/12/18/902cce65-f829-4bb5-8e39-d6cdf0e291231702918143840-Shop-By-Category_WP_02.jpg">
@@ -668,7 +736,7 @@
             </div>
           </div>
 
-              <div class="flex">
+              <div class="flex bammer-img1">
 
                 <div class="flex">
                   <img class="shop" width="100%"src="https://assets.myntassets.com/f_webp,w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2023/12/18/70081222-a79d-4290-b401-e1ac7fe948c81702918143723-Shop-By-Category_WP_08.jpg">
@@ -690,7 +758,7 @@
               </div>
                 
               </div>
-                        <div >
+                        <div class="bammer-img1">
                           <img class="coupen2" src="https://assets.myntassets.com/f_webp,w_980,c_limit,fl_progressive,dpr_2.0/assets/images/2023/12/18/8027075b-f5f3-4788-a5d4-ac9e401b530e1702913970215-App-Install-Banner.jpg">
                         </div>
                       
@@ -704,7 +772,7 @@
     </section>
     
     
-    <div>
+    
 
        
       <footer>
@@ -888,10 +956,9 @@
         </div>
         </div>
     </footer>
-    </div>
-   
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="slick.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.4.1/jquery-migrate.min.js" integrity="sha512-KgffulL3mxrOsDicgQWA11O6q6oKeWcV00VxgfJw4TcM8XRQT8Df9EsrYxDf7tpVpfl3qcYD96BpyPvA4d1FDQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   </body>
 </html>

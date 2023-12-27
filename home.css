@@ -2,94 +2,75 @@ body {
   background-color: rgb(232, 224, 224);
   padding: 0px;
   margin: 0px;
-  
-  font-family: Assistant,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+
+  font-family: Assistant, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Helvetica, Arial, sans-serif;
 }
 
-
-.right{
-margin-left: 60px;
-
+.right {
+  margin-left: 60px;
 }
 .proicon {
-
-margin-bottom: -20px;
-size: 50%;
-margin-right: 30px;
-
+  margin-bottom: -20px;
+  size: 50%;
+  margin-right: 30px;
 }
 
-span{
+span {
   margin-right: 18px;
   font-size: 13px;
   font-weight: 500;
-
-
 }
-.righticons{
+.righticons {
   margin-left: 20px;
 }
 
-.icon{
-
+.icon {
   margin-top: 0px;
-
 }
 
-
-
-.usericons{
-width: 100%;
+.usericons {
+  width: 100%;
   margin-left: 50px;
 }
 
-hr{
-color: #dce0e9;
-
-
-
-
+hr {
+  color: #dce0e9;
 }
-.colf{
-font-size: 15px;
-line-height: 25px;
-
+.colf {
+  font-size: 15px;
+  line-height: 25px;
 }
-.token{
-
-margin-top: 20px;
-width: 100%;
-
+.token {
+  margin-top: 20px;
+  width: 100%;
 }
-
-.coupen{
-  width:100%;
+.banner-shop{
+  margin-top: 20px;
+}
+.coupen {
+  width: 100%;
 }
 
-.bigsale{
-width: 100%;
-margin-left: -20px;
-
+.bigsale {
+  width: 100%;
+  margin-left: -20px;
 }
-.coupen1{
-margin-left: -5px;
- width:100%;
- 
+.coupen1 {
+  
+  width: 100%;
 }
 
 .bammer-img1 {
-
- width:100%;
- 
+  width: 100%;
 }
-
 
 .gaplogo {
   gap: 10px;
 }
 nav {
   width: 100%;
-position: sticky;
+  position: sticky;
   box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.2);
 }
 .flex {
@@ -99,10 +80,9 @@ position: sticky;
 header {
   box-shadow: #282c3f;
   position: sticky;
-  
-  
+
   height: 0%;
-z-index: 1;
+  z-index: 1;
   background: white;
 }
 input {
@@ -113,14 +93,12 @@ input {
   align-items: center;
 }
 
-
-
 .mx {
   display: flex;
   border-bottom: rgb(180, 33, 146);
   margin-top: 20px;
   padding: 20px;
-  
+
   margin-left: -40px;
 
   font-size: 12px;
@@ -129,7 +107,6 @@ input {
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-
 .justify-contenr {
   justify-content: center;
 }
@@ -137,13 +114,11 @@ input {
   width: 50px;
   padding-left: 20px;
 }
-.coupen2{
-width: 100%;
-
+.coupen2 {
+  width: 100%;
 }
-.profilediv{
-flex-direction: column;
-
+.profilediv {
+  flex-direction: column;
 }
 .uppercase {
   text-transform: uppercase;
@@ -162,7 +137,7 @@ input {
   width: 66%;
   border-radius: 26px;
   border: 1px solid #efebeb;
-  padding: 1% 6%;
+  padding: 1% 8%;
   margin: 1% 2%;
 
   background-image: url(https://www.pngarea.com/pngm/109/1164446_searchicon-png-search-icon-png-download.png);
@@ -189,8 +164,6 @@ li {
   font-weight: 700px;
 }
 
-
-
 li a {
   display: block;
   /*color: rgb(23, 22, 22);*/
@@ -198,9 +171,8 @@ li a {
   padding: 12px;
   text-decoration: none;
 }
-a{
+a {
   text-decoration: none;
- 
 }
 
 .dropdown {
@@ -210,8 +182,8 @@ a{
 }
 
 .dropdown .dropbtn {
-  font-size: 16px;
-  
+  font-size: 14px;
+
   outline: none;
 
   padding: 14px 16px;
@@ -240,28 +212,24 @@ a{
   outline: none;
   color: #000000;
   letter-spacing: 0.3px;
-  padding: 25px 12px 20px 16px;
+  padding: 28px 12px 25px 13px;
   font-weight: 650;
   border-bottom: 2px solid transparent;
-  
-   
-
 
   /* Important for vertical align on mobile phones */
 }
 
-.dropdown .dropbtn:hover{
-    border-bottom: 2px solid red;
-    
-
-  
+.dropdown .dropbtn:hover {
+  border-bottom: 2px solid red;
 }
 
 .studioimg {
-  margin-left: 50%;
+  width: 20%;
+
 }
 .vkimg {
-  margin-left: 10%;
+
+  width: 500px;
 }
 
 .studiobtn {
@@ -273,6 +241,12 @@ a{
   border: 1px solid gray;
   font-size: 16px;
   font-weight: 300;
+}
+
+ul .left .flex .item-center {
+padding-right: 0px;
+margin-left: 80%;
+
 }
 .studio {
   margin-top: 20px;
@@ -289,12 +263,12 @@ a{
 
 /* Add a red BOOTOM color to navbar links on hover */
 
-
 a:hover {
   color: black;
 }
 sup {
   color: red;
+  padding-right: 10px;
 }
 /* Dropdown content (hidden by default) */
 .dropdown-content {
@@ -309,20 +283,16 @@ sup {
 }
 .outerDiv {
   display: none;
-   
 }
-.outerDiv:hover
-{
+.outerDiv:hover {
   display: block;
-
 }
 #studioId .outerDiv {
   display: none;
   width: auto;
-   
 }
 
-#studioId  {
+#studioId {
   display: none;
   position: absolute;
   width: 70%;
@@ -335,9 +305,6 @@ sup {
   z-index: 1;
 }
 
-.flexc {
-  flex-direction: column;
-}
 /*.dropdown-content1  {
   display: none;
   
@@ -356,14 +323,9 @@ sup {
   height: 80%;
 }
 
-
-.dropdown:hover .outerDiv
- {
+.dropdown:hover .outerDiv {
   display: block;
-  
-  
- }
-
+}
 
 .column {
   float: left;
@@ -388,12 +350,6 @@ sup {
   background-color: white;
 }
 
-@media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
-    height: 100%;
-  }
-}
 /* Clear floats after the columns */
 .row:after {
   content: "";
@@ -416,10 +372,9 @@ i {
   padding-left: 10px;
 }
 
-
 h5 li a {
   color: rgb(210, 73, 77);
-  padding: 0px  0px 0px 10px;
+  padding: 0px 0px 0px 10px;
   margin: 0px;
 }
 .droplist {
@@ -432,58 +387,54 @@ h5 li a {
   height: auto;
   margin: -2px -10px;
 }
-footer{
-color:#696b79;
+footer {
+  color: #696b79;
   width: 80%;
   padding: 30px 60px 0px 80px;
 }
-.sideleft{
+
+.sideleft {
   margin-left: -120px;
 }
-.fcoloum{
-
+.fcoloum {
   width: 30%;
 }
-.fcoloum1{
+.fcoloum1 {
   margin-left: 20%;
 }
-.fcoloum2{
+.fcoloum2 {
   margin-top: -20px;
   width: 50%;
 }
-.dropbtn1{
+.dropbtn1 {
   font-size: 16px;
   margin-left: -10px;
-padding: 0%;
-  color:#535766;
+  padding: 0%;
+  color: #535766;
   font-weight: 700;
   font-size: 14px;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-.secdiv{
+.secdiv {
   margin-top: 40px;
 }
 
-.pf{
-display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
+.pf {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
   padding: 0px 16px;
   line-clamp: 1pc;
   font-size: 14px;
 }
-.hrline{
-
-
+.hrline {
   position: relative;
   /*  new lines  */
   max-width: 100%;
-  
-
 }
 
 /*.hrline:after{
@@ -497,90 +448,117 @@ display: block;
   top: 50%;
   left:130px ;
 }*/
-.pf1{
+.pf1 {
   font-size: 14px;
 }
-.pserch{
+.pserch {
   margin: 40px 20px;
 }
-.pserch>a{
- color:#535766;
+.pserch > a {
+  color: #535766;
   margin-top: 30px;
   font-weight: 400;
   line-height: 4px;
   font-size: 16px;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-
 }
 
 .og {
-width: 70%;
-
-
+  width: 70%;
+}
+.recycleimg{
+  margin: 0px;
+  padding: 0px 18px 0px 0px ;
+  width: 20%;
 }
 
-.col4{
-
+.col4 {
   padding-right: 50px;
 }
-.footan{
+.footan {
   font-size: 19px;
 }
 
-.og1{
-  width: 25%;
+div .og1 {
+  width: 100%;
+  margin-left: 0px;
 }
-.h4{
+.h4 {
   padding-left: 25px;
-  
 }
 
-  .playb{
-width: 100%;
-
-
-  }
-  .footdiv{
-
-    width: 80%;
+.playb {
+  width: 100%;
+}
+.footdiv {
+  width: 80%;
   padding: 30px 0px 0px 0px;
-  }
-  
-   .playb1{
-width: 55%;
-
-  }
-  .buttn{
-width: 70%;
-
-  }
-  .headgap{
-    padding: 10px px;
-  }
-
-.pop{
-
-  position: absolute;
-    margin-top:-15px;
-    padding-right: 10px;
-    color: #282c3f;
-    font-size: 12px;
-    font-weight: 700;
-    
-
 }
 
-.responsive{
-  margin:25px -20px 25px 30px;
- flex-wrap: nowrap;
- flex-shrink: 0;
- width: 30%;
+.playb1 {
+  width: 55%;
+}
+.buttn {
+  width: 70%;
+}
+.headgap {
+  padding: 10px px;
+}
+
+.pop {
+  position: absolute;
+  margin-top: -15px;
+  padding-right: 10px;
+  color: #282c3f;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.responsive {
+  margin: 25px -20px 25px 30px;
+  flex-wrap: nowrap;
+  flex-shrink: 0;
+  width: 30%;
   overflow-x: auto;
 }
-.imgshop{
+.imgshop {
   width: 90%;
 }
-.responsive1{
-  margin-left: -50px;
+
+.responsive1 {
+  margin: 30px 0px;
+  gap: 20px;
 }
+
+img {
+  width: 100%;
+}
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media all and (max-width: 480px) {
+  nav {
+    flex-direction: column;
+    width: 50%;
+    padding-bottom: 2%;
+  }
+  .flex .serchbar{
+ width: fauto;
+ padding: 2% 45%;
+ margin: 0% 20% 0% -25%;
+
+}
+.righticons{
+  margin-left: 55%;
+}
+
+    
+  }
+
+1
+

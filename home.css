@@ -9,7 +9,7 @@ body {
 .coupen-div2-1 {
   flex-basis: 60%;
   padding-left: 60px;
-  margin-bottom: -54px;
+  margin-bottom: -19%;
   width: 100%;
   display: flex;
 }
@@ -70,6 +70,7 @@ margin-top: 11%;
   width: 100%;
 }
 
+
 .concern-blocks1 .concern-blocks2 .concern-blocks3 {
   margin-right: 80px;
   padding: 50px;
@@ -80,8 +81,7 @@ margin-top: 11%;
       color: #94969f;
 }
 
-.concern-blocks2 {
-}
+
 
 .bammer-img-headings {
   width: 97%;
@@ -136,6 +136,9 @@ width: 98%;
   margin-top: 20px;
   width: 100%;
 }
+.shop,li{
+  cursor: pointer;
+}
 .banner-shop {
   margin-top: 20px;
 }
@@ -153,6 +156,7 @@ width: 98%;
 
 .bammer-img1 {
   width: 100%;
+  cursor: pointer;
 }
 
 .gaplogo {
@@ -306,8 +310,7 @@ a {
   overflow: hidden;
 }
 
-.header-ul {
-}
+
 
 /* Dropdown button */
 .dropdown .dropbtn {
@@ -503,6 +506,8 @@ h5 li a {
 footer {
   /* padding: 40px 68px; */
   background-color: hwb(0 96% 3%);
+  z-index: 0;
+  
 }
 .footerDiv {
   width: 80%;
@@ -524,8 +529,8 @@ footer {
   margin-left: 5%;
 }
 .fcoloum2 {
-  width: 38%;
-  padding-left: 65px;
+  width: 52%;
+  padding-left: 41px;
   /* margin-top: -11px; */
 }
 .dropbtn1 {
@@ -561,6 +566,7 @@ footer {
 
 .bammer-img-main {
   margin-top: 80px;
+  cursor: pointer;
 }
 /*.hrline:after{
   content:"  ";
@@ -599,7 +605,7 @@ footer {
 .recycleimg {
   margin: 0px;
   padding: 0px 18px 0px 0px;
-  width: 34%;
+  width: 31%;
 }
 
 .col4 {
@@ -607,6 +613,9 @@ footer {
 }
 .footan {
   font-size: 19px;
+}
+.foot{
+  width: 50%;
 }
 
 div .og1 {
@@ -634,10 +643,12 @@ div .og1 {
   left: 160px;
 }
 .playb {
-  width: 95%;
+  width: 90%;
+    cursor: pointer;
+
 }
 .playbutton-2{
-  padding-left: 10px;
+  /* padding-left: 10px; */
 }
 
 .footdiv {
@@ -648,11 +659,12 @@ div .og1 {
 .footer_col_4 {
   padding: 0px 0px 0px 0px;
   margin: 30px 0px 0px 0px;
-  width: 28%;
+  width: 34%;
 }
 
 .playb1 {
   width: 50%;
+  cursor: pointer;
 }
 .buttn {
   width: 70%;
@@ -749,6 +761,7 @@ img {
 }
 .extended-coupen1 {
   width: 100%;
+  /* z-index: 1; */
   background-color: rgb(74, 80, 86);
   display: flex;
   align-items: center;
@@ -771,6 +784,7 @@ img {
 
 .extended-coupen {
   width: 100%;
+  z-index: 1;
   background-color: rgb(74, 80, 86);
   display: flex;
   align-items: center;
@@ -797,6 +811,7 @@ img {
 
 .ticket-discount {
   display: none;
+  z-index: 1;
   background-image: linear-gradient(
     280deg,
     rgb(216, 175, 213),
@@ -867,7 +882,7 @@ img {
   color: #dce0e9;
   filter: invert(100%);
   /* fill: white; */
-  padding-bottom: 20px;
+  /* padding-bottom: 20px; */
   margin-bottom: 50px;
   width: 90%;
 }
@@ -902,14 +917,14 @@ img {
   }
 
   .footer-coloums-block{
-
+padding-top: 2%;
     margin: 5%;
   }
 
   .banner-head1,
   .banner-head3 {
     font-weight: 400;
-
+    cursor: pointer;
     margin-top: 9px;
   }
 

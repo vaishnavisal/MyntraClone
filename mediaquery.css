@@ -1,84 +1,102 @@
- @media screen and (max-width: 600px) {
-    .column {
-      width: 100%;
-      height: 100%;
-    }
-    .contact-copyright{
-      flex-direction: column;
-      width: 100%;
-      margin-right: 0%;
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    height: 100%;
+  }
+  .contact-copyright {
+    flex-direction: column;
+    width: 100%;
+    margin-right: 0%;
+  }
+  hr {
+    width: 80%;
+    margin-right: 10%;
+  }
+  .fcoloum2 {
+    width: 100%;
+  }
 
-    }
-    hr{
-      width: 80%;
-      margin-right: 10%;
-    }
-    .fcoloum2{
-      width: 100%;
-    }
+  .footer-side2-colums {
+    flex-direction: column;
+    width: 100%;
+    margin-left: 10%;
+  }
+  .pserch {
+    width: 70%;
+  }
+  .pf,
+  .pf1,
+  .address-coloum-2 {
+    margin-left: 10%;
+    width: 50%;
+  }
+  .dropbtn1 {
+    width: 50%;
+    margin-left: 2%;
+  }
+
+  .address-block {
+    flex-direction: column;
+    width: 100%;
+  }
+  .footer_col_4 {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .concern-blocks3 {
+    margin-left: 10px;
+  }
+  nav {
+    flex-direction: column;
+    width: 50%;
+    padding-bottom: 2%;
+  }
+  .footdiv {
+    margin-left: 10%;
+    padding-right: 0%;
+  }
+
+  .footer_col_4 {
+    /* flex-direction: column; */
+  }
+}
+
+@media all and (max-width: 480px) {
+  nav {
+    flex-direction: column;
+    width:100%;
+    padding-bottom: 2%;
+    background-color: aliceblue;
+  box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.2);
+  position: absolute;
+
+  top: 0;
+
+  background-color: white;  }
+  .footer-coloums-rightside {
+    flex-direction: column;
+    width: 50%;
+    padding-right: 70px;
+  }
+
+  
+  .fcoloum1-mq{
+    padding-left: 45px;
+  }
+
+  .foot {
+    flex-direction: column;
+
+    padding-left: 0px;
+  }
+  .flex .serchbar {
+    width: 80%;
+    padding: 2% 3 0%;
+    margin: 0% 15% 0% 0%;
+  }
+  nav.righticons {
+    margin-left: 50%;
     
-
-    .footer-side2-colums{
-      flex-direction: column;
-      width: 100%;
-      margin-left: 10%;
-
-    }
-    .pserch{
-      width: 70%;
-    }
-    .pf,.pf1,.address-coloum-2{
-      margin-left: 10%;
-      width: 50%;
-    }
-    .dropbtn1{
-      width: 50%;
-      margin-left: 2%;
-    }
-
-      .address-block{
-      flex-direction: column;
-      width: 100%;
-      
-
-    }
-     .footer_col_4{
-      flex-direction: column;
-      width: 100%;
-      
-
-    }
-
-    .concern-blocks3{
-      
-      margin-left: 10px;
-
-    }
-    nav {
-      flex-direction: column;
-      width: 50%;
-      padding-bottom: 2%;
-    }
-    .footdiv {
-      margin-left:10%;
-      padding-right: 0%;
-      
-
-    }
   }
-
-  @media all and (max-width: 480px) {
-    nav {
-      flex-direction: column;
-      width: 20%;
-      padding-bottom: 2%;
-    }
-    .flex .serchbar {
-      width: fauto;
-      padding: 2% 45%;
-      margin: 0% 20% 0% -25%;
-    }
-    .righticons {
-      margin-left: 55%;
-    }
-  }
+}

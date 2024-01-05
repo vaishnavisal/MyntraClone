@@ -10,9 +10,9 @@ body {
  flex-basis: 60%;
     padding-left: 38px;
     /* align-items: flex-end; */
-    margin-top: -4%;
+        margin-top: -5%;
     width: 100%;
-    height: 27%;
+    height: 16%;
     display: flex;
 }
 .cou-use {
@@ -29,7 +29,7 @@ body {
 
 .footer-coupen {
   margin-left: 20px;
-margin-top: 22px;
+/* margin-top: 22px; */
   font-size: 12px;
   font-weight: 700;
   /* padding: 10px; */
@@ -95,7 +95,7 @@ margin-top: 22px;
 }
 
 .right {
-  margin-left: 30px;
+  margin-left: 179px;
 }
 .proicon {
   margin-bottom: -20px;
@@ -111,7 +111,9 @@ span {
   font-weight: 500;
 }
 .righticons {
-  margin-left: 20px;
+  /* margin-left: 20px; */
+      width: 70%;
+
 }
 
 .usericons {
@@ -205,7 +207,7 @@ input {
 }
 
 .d100-img-side-block {
-  margin-left: 20px;
+  margin-left: 7px;
 }
 .justify-contenr {
   justify-content: center;
@@ -216,6 +218,8 @@ input {
 }
 .coupen2 {
   width: 100%;
+  padding-top: 50px;
+
 }
 .profilediv {
   flex-direction: column;
@@ -227,7 +231,7 @@ input {
 .serchbar {
   width: 26vw;
   height: 30px;
-  margin-left: 150px;
+    margin-left: 24px;
   margin-right: 20px;
   border-radius: 5px;
   border: 1px solid rgb(250, 247, 247);
@@ -384,7 +388,7 @@ sup {
   display: none;
   position: absolute;
   width: 80%;
-  top: 80px;
+  top: 67px;
   left: 45px;
   margin: auto;
   box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
@@ -598,7 +602,7 @@ footer {
 }
 .recycleimg {
   margin: 0px;
-  padding: 0px 18px 0px 0px;
+  padding: 0px 7px 0px 0px;
   width: 31%;
 }
 
@@ -651,7 +655,7 @@ div .og1 {
 }
 .footer_col_4 {
   padding: 0px 0px 0px 0px;
-  margin: 30px 0px 0px 0px;
+  margin: 30px 0px 0px 35px;
   width: 34%;
 }
 
@@ -698,12 +702,17 @@ div .og1 {
   width: 30%;
   overflow-x: auto;
 }
+.popular-serch::after {
+    
+    display: none;
+    
+}
 .imgshop {
   width: 90%;
 }
 
 .responsive1 {
-  margin: 30px 0px;
+  /* margin: 30px 0px; */
   gap: 20px;
 }
 
@@ -884,7 +893,7 @@ img {
   background-image: linear-gradient(
     180deg,
     rgb(139, 41, 131),
-    rgb(130, 29, 71)
+    rgb(110, 0, 46)
   );
   /* background-color: rgb(28, 7, 48); */
   width: 12%;
@@ -894,11 +903,11 @@ img {
 }
 
 .outer-srach-img {
-  margin: 20px 0px 20px 35px;
+  margin: 20px 6px 25px 14px;
 }
 
 .banner-caption {
-  color: white;
+  color: rgb(243, 244, 234);
   font-size: medium;
   align-items: center;
   text-align: center;
@@ -915,7 +924,7 @@ img {
 
 .footer-coloums-block {
   padding-top: 2%;
-  margin: 5%;
+      margin: 2% 5% 1% 5%;
 }
 
 .banner-head1,
@@ -925,7 +934,7 @@ img {
   margin-top: 10px;
 }
 .banner-head3{
-  padding: 20px 0px;
+  padding: 15px 0px 20px 0px;
   font-weight: 400;
   cursor: pointer;
   /* margin-top: 5px; */

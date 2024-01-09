@@ -11,14 +11,13 @@
             <link rel="stylesheet" href="slick-theme.css" />
 
     <link rel="stylesheet" href="home.js" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
 
     <link rel="icon" type="image/x-icon" href="data:image/png;base64,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"/>
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />    
-    <title>Online shopping for Women,Men,Kids Fastion & Lifestyle</title>
+
+      <title>Online shopping for Women,Men,Kids Fastion & Lifestyle</title>
 
 
 </head>
@@ -608,6 +607,34 @@
     <section >
       
       
+  <!-- <div class="swiper mySwiper">
+      <div class="swiper-wrapper"> -->
+      <!-- <div class="swiper-slide">
+                    <img class="banner-main-image" src="asseet/Corosal banner1.webp">
+
+      </div>
+      <div class="swiper-slide">
+        <img class="banner-main-image" src="asseet/slider-img-2.webp">
+
+      </div>
+      <div class="swiper-slide">
+                <img class="banner-main-image" src="asseet/corosal-slider-image4.webp">
+
+      </div>
+      <div class="swiper-slide">
+            <img class="banner-main-image" src="asseet/corosal-slider-image5.webp">
+
+      </div> -->
+      <!-- <div class="swiper-slide">Slide 5</div>
+      <div class="swiper-slide">Slide 6</div>
+      <div class="swiper-slide">Slide 7</div>
+      <div class="swiper-slide">Slide 8</div>
+      <div class="swiper-slide">Slide 9</div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div> -->
+
+
 
 <div class="corosaldiv">
           <div class="bammer-img-main flex corosaldiv1" >
@@ -666,7 +693,7 @@
           </div>
 
 
-<div class="flex  ">
+<div class="flex grand-global-images-container">
  
     <div class="flex images-responsive-tab1">
 
@@ -763,11 +790,11 @@
 
             
           
-               <div class="flex outer-srach-img">
+               <div class=" outer-srach-img">
              
                 <div class="image-container-last" >
-                 <div class="flex" >
-                  <div class="outer-img1 flex  ">
+                 <!-- <div class=" container-image-desktop " > -->
+                  <div class="outer-img1 ">
                        <div class="outer-img-div-1"> 
                         <img class="img-gallery1"  src="asseet/srch-img3.png">
                       </div>
@@ -780,7 +807,7 @@
                  </div>
 
                  
-                  <div class="outer-img1 flex push-down-images">
+                  <div class="outer-img1  push-down-images">
                        <div class="outer-img-div-1"> 
                         <img class="img-gallery1"  src="asseet/srch-img4.png">
                       </div>
@@ -791,14 +818,14 @@
                           <div  class="banner-head3">Shop now</div>
                       </div>  
                  </div>
-            </div>
+            <!-- </div> -->
 
 
 
 
 
-                <div class="flex" >
-                  <div class="outer-img1 flex  ">
+                <!-- <div class="container-image-desktop " > -->
+                  <div class="outer-img1   ">
                        <div class="outer-img-div-1"> 
                         <img class="img-gallery1"  src="asseet/srch-img5.png">
                       </div>
@@ -811,7 +838,7 @@
                  </div>
 
                  
-                  <div class="outer-img1 flex push-down-images">
+                  <div class="outer-img1  push-down-images">
                        <div class="outer-img-div-1"> 
                         <img class="img-gallery1"  src="asseet/srch-img3.png">
                       </div>
@@ -822,11 +849,11 @@
                           <div  class="banner-head3">Shop now</div>
                       </div>  
                  </div>
-            </div>
+            <!-- </div> -->
 
 
-              <div class="flex" >
-                  <div class="outer-img1 flex  ">
+              <!-- <div class="container-image-desktop " > -->
+                  <div class="outer-img1   ">
                        <div class="outer-img-div-1"> 
                         <img class="img-gallery1"  src="asseet/srch-img6.png">
                       </div>
@@ -839,7 +866,7 @@
                  </div>
 
                  
-                  <div class="outer-img1 flex push-down-images">
+                  <div class="outer-img1  push-down-images">
                        <div class="outer-img-div-1"> 
                         <img class="img-gallery1"  src="asseet/srch-img4.png">
                       </div>
@@ -853,8 +880,8 @@
             </div>
                  </div>
                
-           </div>    
-
+           <!-- </div>     -->
+      
            
         
 
@@ -968,6 +995,15 @@
         </div>
       </div>
     
+
+
+ 
+
+
+
+
+
+
 
        <div class="footer">
       <footer>
@@ -1205,6 +1241,8 @@
 </body>
       
     
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
 
    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>

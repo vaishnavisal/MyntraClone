@@ -15,7 +15,7 @@
   
 }
 .playb{
-  width: 140%;
+  width: 160%;
 }
 .images-responsive-tab{
   flex-direction: column;
@@ -37,7 +37,7 @@
 
 .footer-col-subheadings{
   font-size: 13px;
-  padding: 10px 2px  2px 2px;
+  /* padding: 5px 2px  2px 2px; */
 }
 
 
@@ -50,7 +50,7 @@
 
 
 .fcoloum2 {
-    width: 144%;
+    width: 100%;
     padding-left: 20px;
     /* margin-top: -11px; */
     font-size: 19px;
@@ -62,7 +62,7 @@
 }
 
   ul.flex.righticons-container {
-    /* width: 100%; */
+    width: 100%;
     /* margin-left: 24%; */
     padding-left: 4px;
     /* margin-right: 50px; */
@@ -76,11 +76,13 @@
     rgb(110, 0, 46)
   );
   /* background-color: rgb(28, 7, 48); */
-  width: 100%;
+  width: 44%;
   height: 5%;
   padding: 6px 8px 12px 6px;
   margin: 20px 10px 0px 0px;
   flex-direction: column;
+  display: flex;
+  flex-flow: wrap;
 }
 
 .outer-srach-img {
@@ -107,7 +109,7 @@
 }
 
 .image-container-last{
-  flex-direction: column;
+  /* flex-direction: column; */
   padding-top: 0px;
   margin-top: -22px;
 
@@ -115,14 +117,23 @@
 .banner-head1,.banner-head3,.banner-head2{
   /* flex-direction: column; */
   font-size: 16px;
-  padding: 0px 0px 0px 0px;
+  padding: 10px 0px 0px 0px;
       margin-top: 1px;
+      font-weight: 500;
 }
 .banner-head1,.banner-head3{
   /* flex-direction: column; */
-  font-size: 12px;
-  padding: 10px 0px 0px 0px;
+  font-size: 16px;
+  /* padding: 20px 0px 0px 0px; */
       margin-top: 0px;
+}
+
+
+
+.container-image-desktop{
+
+display: flex;
+
 }
 /* .outer-img1{
     margin: 0px 9px 0px 0px;
@@ -177,7 +188,7 @@
      */
   }
   .outer-srach-img {
-    margin: 17px 0px 25px 19px;
+    margin: auto;
     width: 85%;
 } 
 
@@ -198,11 +209,11 @@
   }
   .iMG-SHOP-BANNERS {
     letter-spacing: 3px;
-    font-size: 10px;
+    font-size: 15px;
     color: #535766;
     /* margin: 50; */
     padding: 5px 0px 5px 11px;
-    width: 100%;
+    width: 100%;}
     .serchbar {
     width: 100%;
     padding: 0%  0%;
@@ -221,12 +232,22 @@
   
   
 
+.banner-head2 {
+    font-size: 24px;
+    text-align: none;
+    /* padding: 18px 0px 0px 0px; */
+    font-weight: 700;
+}
+
 .bammer-img-main{
     
     padding-top: 70px;
 }
   
 }
+
+
+
 
 @media screen and (max-width: 480px) {
   nav {
@@ -242,12 +263,22 @@
  }
   .footer-coloums-rightside {
     flex-direction: column;
-    width: 50%;
+    width: 60%;
     padding-right: 70px;
   }
 .right {
     margin-left: 0px;
 }
+.left {
+    margin-left: 0px;
+}
+ .playbutton-2{
+  padding-left: 50px;
+ }
+
+ .concern-blocks3{
+margin-left: 0px;
+ }
   
   .fcoloum1-mq{
     padding-left: 26px;
@@ -274,13 +305,112 @@
     flex-direction: column;
 }
 
+.outer-img1 {
+  background-image: linear-gradient(
+    180deg,
+    rgb(139, 41, 131),
+    rgb(110, 0, 46)
+  );
+  /* background-color: rgb(28, 7, 48); */
+  width: 25%;
+  height: 5%;
+  padding: 6px 8px 12px 6px;
+  margin: 20px 10px 0px 0px;
+  flex-direction: column;
+  display: flex;
+  flex-flow: wrap;
+}
 
   
 
   .banner-head2{
   /* flex-direction: column; */
-  font-size: 19px;
-  padding: 10px 0px 10px 0px;
-      margin-top: 6px;
+  font-size: 11px;
+  /* padding: 10px 0px 10px 0px; */
+      /* margin-top: 6px; */
 }
+
+.banner-head1,.banner-head3{
+  /* flex-direction: column; */
+  font-size: 8px;
+  /* padding: 20px 0px 0px 0px; */
+      margin-top: 0px;
+}
+
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+        top: -83px;
+    /* flex-direction: column; */
+    width:100%;
+    /* align-items: center; */
+    padding-bottom: 0%;
+    background-color: aliceblue;
+    box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.2);
+    position: absolute;
+
+  background-color: white; 
+ 
+}
+.right {
+    margin-left: 0px;
+    
+}
+.profilediv {
+    flex-direction: column;
+    width: 25%;
+}
+.righticons {
+    /* margin-left: 20px; */
+    width: 70%;
+}
+
+.contact-copyright {
+    width: 0%;
+    /* flex-flow: wrap; */
+    font-size: 12px;
+}
+
+.concern-blocks3 {
+    /* margin-left: 97px; */
+    
+}
+
+.serchbar {
+    /* width: 26vw; */
+    height: 30px;
+    padding-left: 28px;
+    margin-left: 8px;
+    margin-right: 3px;
+    border-radius: 5px;
+    border: 1px solid rgb(250, 247, 247);
+    background-color: #f5f5f6;
+}
+
+
+
+.iMG-SHOP-BANNERS {
+    letter-spacing: 3px;
+    font-size: 19px;
+    color: #535766;
+    /* margin: 50px; */
+    padding: 18px 0px 18px 18px;
+    width: 81%;
+}
+.footdiv {
+    width: 89%;
+    padding: 30px 15px;
+    color: gray;
+}
+.dropdown .dropbtn {
+    font-size: 10px;
+    /* border: none; */
+    outline: none;
+    color: #000000;
+    font-weight: 650;
+    padding: 18px 9px 22px 4px;
+  
+}
+
 }
